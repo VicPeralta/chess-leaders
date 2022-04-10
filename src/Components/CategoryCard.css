@@ -1,0 +1,14 @@
+.category-card {
+  width: 150px;
+  height: 200px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-card > img {
+  width: 100px;
+  height: auto;
+}
