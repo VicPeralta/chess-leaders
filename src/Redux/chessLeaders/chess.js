@@ -1,15 +1,39 @@
 const GETCHESSDATABEGIN = 'chessLeaders/chess/GETCHESSDATABEGIN';
 const GETCHESSDATASUCCESS = 'chessLeaders/chess/GETCHESSDATASUCCESS';
 const GETCHESSDATAFAILURE = 'chessLeaders/chess/GETCHESSDATAFAILURE';
+const GETPLAYERDATABEGIN = 'chessLeaders/chess/GETPLAYERDATABEGIN';
+const GETPLAYERDATASUCCESS = 'chessLeaders/chess/GETPLAYERDATASUCCESS';
+const GETPLAYERDATAFAILURE = 'chessLeaders/chess/GETPLAYERDATAFAILURE';
 const CHESS_DATA_URL = 'https://api.chess.com/pub/leaderboards';
+const PLAYER_DATA_URL = ' https://api.chess.com/pub/player/';
 const INITIAL_STATE = {
   chessData: [],
+  playerData: [],
   fetching: false,
 };
 
 export function getChessDataBegin() {
   return {
     type: GETCHESSDATABEGIN,
+  };
+}
+
+export function getPlayerDataBegin() {
+  return {
+    type: GETPLAYERDATABEGIN,
+  };
+}
+
+export function getPlayerDataFailure() {
+  return {
+    type: GETPLAYERDATAFAILURE,
+  };
+}
+
+export function getPlayerDataSuccess(data) {
+  return {
+    type: GETPLAYERDATASUCCESS,
+    payload: data,
   };
 }
 
@@ -29,18 +53,27 @@ export function getChessDataSuccess(data) {
 export default function reducer(state = INITIAL_STATE, action) {
   switch (action.type) {
     case GETCHESSDATABEGIN:
+    case GETPLAYERDATABEGIN:
       return {
         ...state,
         fetching: true,
       };
-    case GETCHESSDATASUCCESS:
-      return {
-        chessData: action.payload,
-        fetching: false,
-      };
+    case GETPLAYERDATAFAILURE:
     case GETCHESSDATAFAILURE:
       return {
         ...state,
+        fetching: false,
+      };
+    case GETCHESSDATASUCCESS:
+      return {
+        ...state,
+        chessData: action.payload,
+        fetching: false,
+      };
+    case GETPLAYERDATASUCCESS:
+      return {
+        ...state,
+        playerData: action.payload,
         fetching: false,
       };
     default:
@@ -81,5 +114,17 @@ export function getChessData() {
         }
         dispatch(getChessDataSuccess(chessData));
       }))).catch(() => dispatch(getChessDataFailure()));
+  };
+}
+
+export function getPlayerData(player) {
+  return (dispatch) => {
+    const url = `${PLAYER_DATA_URL}${player}`;
+    dispatch(getPlayerDataBegin());
+    fetch(url).then((response) => (
+      response.json().then((json) => {
+        dispatch(getPlayerDataSuccess(json));
+      })
+    )).catch(() => dispatch(getPlayerDataFailure()));
   };
 }
