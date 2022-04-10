@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import daily from '../assets/daily.png';
 import daily960 from '../assets/daily960.png';
@@ -30,15 +31,23 @@ const icons = {
   battle,
 };
 
-const Category = ({
-  id, name, average,
-}) => (
-  <div className="category-card" data-id={id}>
-    <p>{name}</p>
-    <img src={icons[name]} alt="the category" />
-    <p>{average}</p>
-  </div>
-);
+const Category = ({ id, name, average }) => {
+  const onClicked = () => {
+
+  };
+  const onKeyDown = () => {
+
+  };
+  return (
+    <Link to={`/leaderboard/${id}`}>
+      <div className="category-card" role="presentation" data-id={id} onClick={onClicked} onKeyDown={onKeyDown}>
+        <p>{name}</p>
+        <img src={icons[name]} alt="the category" />
+        <p>{average}</p>
+      </div>
+    </Link>
+  );
+};
 
 Category.propTypes = {
   id: PropTypes.number.isRequired,
