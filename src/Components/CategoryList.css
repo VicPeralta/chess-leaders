@@ -1,0 +1,7 @@
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 90%;
+  margin-inline: auto;
+}
