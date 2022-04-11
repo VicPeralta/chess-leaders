@@ -11,15 +11,15 @@ const LeaderBoard = () => {
       <Link to="/">
         <IoMdArrowRoundBack />
       </Link>
-      <ul>
+      <div>
         {leaders.map((leader) => (
-          <li
-            key={leader.rank}
-          >
-            {leader.username}
-          </li>
+          <Link key={leader.username} to={`/playercard/${leader.username}/${index}`}>
+            <p>
+              {leader.username}
+            </p>
+          </Link>
         ))}
-      </ul>
+      </div>
     </>
   );
 };

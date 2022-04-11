@@ -13,7 +13,7 @@ function App() {
           <Route path=":index" element={<LeaderBoard />} />
         </Route>
         <Route path="/playerCard" element={<PlayerCard />}>
-          <Route path=":username" element={<PlayerCard />} />
+          <Route path=":username/:index" element={<PlayerCard />} />
         </Route>
       </Routes>
     </div>

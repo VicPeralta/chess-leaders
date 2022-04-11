@@ -31,23 +31,15 @@ const icons = {
   battle,
 };
 
-const Category = ({ id, name, average }) => {
-  const onClicked = () => {
-
-  };
-  const onKeyDown = () => {
-
-  };
-  return (
-    <Link to={`/leaderboard/${id}`}>
-      <div className="category-card" role="presentation" data-id={id} onClick={onClicked} onKeyDown={onKeyDown}>
-        <p>{name}</p>
-        <img src={icons[name]} alt="the category" />
-        <p>{average}</p>
-      </div>
-    </Link>
-  );
-};
+const Category = ({ id, name, average }) => (
+  <Link to={`/leaderboard/${id}`}>
+    <div className="category-card" role="presentation" data-id={id}>
+      <p>{name}</p>
+      <img src={icons[name]} alt="the category" />
+      <p>{average}</p>
+    </div>
+  </Link>
+);
 
 Category.propTypes = {
   id: PropTypes.number.isRequired,
