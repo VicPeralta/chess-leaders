@@ -1,0 +1,8 @@
+.leader-container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.leader-container > .leader-row:nth-child(even) {
+  background-color: var(--alternate-color);
+}

@@ -1,5 +1,5 @@
+import king from '../../assets/whiteQueen.png';
 import './Header.css';
-import king from '../assets/whiteQueen.png';
 
 const Header = () => (
   <div className="header">

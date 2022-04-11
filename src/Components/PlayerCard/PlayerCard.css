@@ -1,0 +1,23 @@
+.player-info {
+  margin-top: 30px;
+}
+
+.player-info table {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.player-info table td {
+  text-align: left;
+  padding: 5px;
+}
+
+.player-info img {
+  width: 200px;
+  height: auto;
+}
+
+.player-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
