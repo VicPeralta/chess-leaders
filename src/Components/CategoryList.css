@@ -6,20 +6,6 @@
   justify-content: center;
 }
 
-.search-bar {
-  display: flex;
-  align-items: center;
-  width: 90%;
-  margin: 10px auto;
-}
-
-.search {
-  width: 90%;
-  margin-left: 3px;
-  border: none;
-  padding: 3px 8px;
-}
-
 .category-container a {
   color: var(--text-color);
   text-decoration: none;
