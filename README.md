@@ -3,8 +3,6 @@
 # Chess Leaders
 > A web app that lets you check the leaders in all chess games modalities from chess.com.
 
-
-
 ## Built With
 
 - JavaScript
@@ -12,10 +10,10 @@
 - Redux
 
 ## Live Demo
-[Chess leaders]()   
+[Chess leaders](https://vicperalta.github.io/chess-leaders/)   
 
 
-<img src="./chessLeaders.png" width="100%" height="auto"/>
+<img src="./chessLeadersBlack.png" width="100%" height="auto"/>
 
 ## Getting Started
 
@@ -33,14 +31,12 @@ To get a local copy follow these simple example steps.
 5.- Run this command to see the page `npm start`  
 6.- To see the code open the project in the code editor of your preference.  
 
-
-
 ## Author
 
 👤 **Victor Peralta**
 - GitHub: [@VicPeralta](https://github.com/VicPeralta)
 - Twitter: [@VicPeralta](https://twitter.com/VicPeralta)
-- Linkedin: [@VicPeralta](https://www.linkedin.com/in/victor-peralta-gomez-648072107/)
+- Linkedin: [@VicPeralta](https://www.linkedin.com/in/vicperalta/)
 
 ## 🤝 Contributing
 
@@ -53,6 +49,7 @@ Feel free to check the [issues page](https://github.com/VicPeralta/chess-leaders
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+- Original design by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
 - All icons from flaticon(<a href="https://www.flaticon.com/free-icons/year" title="year icons">Year icons created by Freepik - Flaticon</a>)
 - A special thank for @fernandorpm for this amazing [README template](https://github.com/microverseinc/readme-template)
 
