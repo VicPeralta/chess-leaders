@@ -2,6 +2,33 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
   width: 90%;
-  margin-inline: auto;
+  margin: 10px auto;
+}
+
+.search {
+  width: 90%;
+  margin-left: 3px;
+  border: none;
+  padding: 3px 8px;
+}
+
+.category-container a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:nth-child(4n + 2) {
+  background-color: var(--alternate-color);
+}
+
+a:nth-child(4n + 3) {
+  background-color: var(--alternate-color);
 }

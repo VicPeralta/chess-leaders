@@ -1,3 +1,4 @@
+import { BiRightArrowCircle } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import daily from '../assets/daily.png';
@@ -34,9 +35,17 @@ const icons = {
 const Category = ({ id, name, average }) => (
   <Link to={`/leaderboard/${id}`}>
     <div className="category-card" role="presentation" data-id={id}>
-      <p>{name}</p>
+      <div className="category-title-section">
+        <BiRightArrowCircle size={24} />
+      </div>
       <img src={icons[name]} alt="the category" />
-      <p>{average}</p>
+      <p className="category-title">{name.replace('live_', '')}</p>
+      <div className="average">
+        <span className="highlighted">avg:  </span>
+        <span>
+          {average}
+        </span>
+      </div>
     </div>
   </Link>
 );

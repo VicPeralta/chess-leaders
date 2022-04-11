@@ -53,7 +53,7 @@ Feel free to check the [issues page](https://github.com/VicPeralta/chess-leaders
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
+- All icons from flaticon(<a href="https://www.flaticon.com/free-icons/year" title="year icons">Year icons created by Freepik - Flaticon</a>)
 - A special thank for @fernandorpm for this amazing [README template](https://github.com/microverseinc/readme-template)
 
 ## 📝 License

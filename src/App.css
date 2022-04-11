@@ -1,3 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
+
+:root {
+  --bg-color: rgb(223, 71, 130);
+  --primary-color: rgb(251, 81, 146);
+  --highlighted-card: rgb(244, 80, 143);
+  --alternate-color: rgb(214, 69, 124);
+  --text-color: #fff;
+  --highlighted-text: rgb(253, 177, 79);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Source Pro", sans-serif;
+}
+
+.highlighted {
+  color: var(--highlighted-text);
+}
+
 .App {
   text-align: center;
   user-select: none;
