@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "./static/css/main.2c233806.css",
+    "main.js": "./static/js/main.5fd183c9.js",
+    "static/media/rush.png": "./static/media/rush.b314034344827a396921.png",
+    "static/media/battle.png": "./static/media/battle.4f5f74f29a442ccdac9e.png",
+    "static/media/rapid.png": "./static/media/rapid.a4fbeb3db7b2be371573.png",
+    "static/media/tactics.png": "./static/media/tactics.95053670010b57247cff.png",
+    "static/media/daily960.png": "./static/media/daily960.de7bc20a87c23b8bf129.png",
+    "static/media/three.png": "./static/media/three.51a83e6cf442aa6097b6.png",
+    "static/media/daily.png": "./static/media/daily.30912bd883e263c1ef68.png",
+    "static/media/king.png": "./static/media/king.123f575ccd0654dcd24c.png",
+    "static/media/bug.png": "./static/media/bug.8de9e1c885d248c6d15d.png",
+    "static/media/blitz960.png": "./static/media/blitz960.5ef4dd19af10e66042f0.png",
+    "static/media/blitz.png": "./static/media/blitz.ce72742ddfccce0356e3.png",
+    "static/media/house.png": "./static/media/house.2ed360dd34282fb2abc7.png",
+    "static/media/noPhoto.svg": "./static/media/noPhoto.d1ab51850edf688507e69a23eff529d8.svg",
+    "index.html": "./index.html",
+    "main.2c233806.css.map": "./static/css/main.2c233806.css.map",
+    "main.5fd183c9.js.map": "./static/js/main.5fd183c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c233806.css",
+    "static/js/main.5fd183c9.js"
+  ]
+}
