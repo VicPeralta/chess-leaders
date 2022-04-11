@@ -32,11 +32,13 @@ const icons = {
   battle,
 };
 
-const Category = ({ id, name, average }) => (
+const Category = ({
+  id, name, average, detailButton,
+}) => (
   <Link to={`/leaderboard/${id}`}>
     <div className="category-card" role="presentation" data-id={id}>
       <div className="category-title-section">
-        <BiRightArrowCircle size={24} />
+        {detailButton && (<BiRightArrowCircle size={24} />)}
       </div>
       <img src={icons[name]} alt="the category" />
       <p className="category-title">{name.replace('live_', '')}</p>
@@ -50,9 +52,14 @@ const Category = ({ id, name, average }) => (
   </Link>
 );
 
+Category.defaultProps = {
+  detailButton: true,
+};
+
 Category.propTypes = {
   id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   average: PropTypes.number.isRequired,
+  detailButton: PropTypes.bool,
 };
 export default Category;

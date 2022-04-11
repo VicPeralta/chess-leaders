@@ -1,0 +1,27 @@
+
+.leader-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-inline: 10px;
+  justify-content: center;
+}
+
+.leader-row a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.rank {
+  text-align: left;
+  width: 20%;
+}
+
+.more {
+  text-align: right;
+}
+
+.user {
+  text-align: left;
+  width: 60%;
+}

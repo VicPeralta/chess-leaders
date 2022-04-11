@@ -22,7 +22,7 @@ const SearchBar = (
         <span className="back-text">{backText}</span>
       </div>
       <input type="text" placeholder={searchText} className="search" onChange={handeChange} />
-      <div>
+      <div className="icons">
         <BiMicrophone size={20} style={{ margin: '0 10px' }} />
         <AiOutlineSetting size={20} />
       </div>
