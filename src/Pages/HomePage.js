@@ -1,9 +1,9 @@
 import CategoryList from '../Components/CategoryList';
+import Header from '../Components/Header';
 
 const HomePage = () => (
   <>
-    <h1>Chess.com leaders</h1>
-    <p>Please select the category you want to consult</p>
+    <Header />
     <CategoryList />
   </>
 );

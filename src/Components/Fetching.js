@@ -1,8 +1,12 @@
+import ProgressCircle from './ProgressCircle';
+import './Fetching.css';
+
 const Fetching = () => (
-  <div>
-    <h2>Fetching data from chess.com</h2>
-    <p>Please waiter</p>
-    <p>Spinner here</p>
+  <div className="fetching">
+    <p>Retrieving data </p>
+    <p>from chess.com</p>
+    <p>Please wait...</p>
+    <ProgressCircle />
   </div>
 );
 
