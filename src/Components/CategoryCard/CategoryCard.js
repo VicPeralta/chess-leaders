@@ -1,19 +1,19 @@
 import { BiRightArrowCircle } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import daily from '../assets/daily.png';
-import daily960 from '../assets/daily960.png';
-import liveRapid from '../assets/rapid.png';
-import liveBlitz from '../assets/blitz.png';
-import liveBullet from '../assets/bullet.png';
-import liveBughouse from '../assets/bug.png';
-import liveBlitz960 from '../assets/blitz960.png';
-import liveThreecheck from '../assets/three.png';
-import liveCrazyhouse from '../assets/house.png';
-import liveKingofthehill from '../assets/king.png';
-import tactics from '../assets/tactics.png';
-import rush from '../assets/rush.png';
-import battle from '../assets/battle.png';
+import daily from '../../assets/daily.png';
+import daily960 from '../../assets/daily960.png';
+import liveRapid from '../../assets/rapid.png';
+import liveBlitz from '../../assets/blitz.png';
+import liveBullet from '../../assets/bullet.png';
+import liveBughouse from '../../assets/bug.png';
+import liveBlitz960 from '../../assets/blitz960.png';
+import liveThreecheck from '../../assets/three.png';
+import liveCrazyhouse from '../../assets/house.png';
+import liveKingofthehill from '../../assets/king.png';
+import tactics from '../../assets/tactics.png';
+import rush from '../../assets/rush.png';
+import battle from '../../assets/battle.png';
 import './CategoryCard.css';
 
 const icons = {

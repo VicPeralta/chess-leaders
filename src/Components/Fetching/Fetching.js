@@ -1,4 +1,4 @@
-import ProgressCircle from './ProgressCircle';
+import ProgressCircle from '../ProgressCircle/ProgressCircle';
 import './Fetching.css';
 
 const Fetching = () => (

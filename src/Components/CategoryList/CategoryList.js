@@ -1,10 +1,10 @@
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
 
-import Fetching from './Fetching';
-import Category from './CategoryCard';
+import Fetching from '../Fetching/Fetching';
+import Category from '../CategoryCard/CategoryCard';
+import SearchBar from '../SearchBar/SearchBar';
 import './CategoryList.css';
-import SearchBar from './SearchBar';
 
 const CategoryList = () => {
   const fetching = useSelector((state) => (state.fetching));

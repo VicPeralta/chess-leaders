@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router';
-import './App.css';
-import LeaderBoard from './Components/LeaderBoard';
+import LeaderBoard from './Components/LeaderBoard/LeaderBoard';
 import HomePage from './Pages/HomePage';
-import PlayerCard from './Components/PlayerCard';
+import PlayerCard from './Components/PlayerCard/PlayerCard';
+import './App.css';
 
 function App() {
   return (

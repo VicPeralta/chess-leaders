@@ -1,5 +1,5 @@
-import CategoryList from '../Components/CategoryList';
-import Header from '../Components/Header';
+import CategoryList from '../Components/CategoryList/CategoryList';
+import Header from '../Components/Header/Header';
 
 const HomePage = () => (
   <>

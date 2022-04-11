@@ -1,10 +1,10 @@
 import { useParams } from 'react-router';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getPlayerData } from '../Redux/chessLeaders/chess';
-import Fetching from './Fetching';
-import SearchBar from './SearchBar';
-import noPhoto from '../assets/noPhoto.svg';
+import { getPlayerData } from '../../Redux/chessLeaders/chess';
+import Fetching from '../Fetching/Fetching';
+import SearchBar from '../SearchBar/SearchBar';
+import noPhoto from '../../assets/noPhoto.svg';
 import './PlayerCard.css';
 
 const PlayerCard = () => {
@@ -45,38 +45,40 @@ const PlayerCard = () => {
               {playerData.name}
             </p>
             <table>
-              <tr>
-                <td>Rank #:</td>
-                <td>{generalInfo.rank}</td>
-              </tr>
-              <tr>
-                <td>User name:</td>
-                <td>{playerData.username}</td>
-              </tr>
-              <tr>
-                <td>Title:</td>
-                <td>{playerData.title}</td>
-              </tr>
-              <tr>
-                <td>Score:</td>
-                <td>{generalInfo.score}</td>
-              </tr>
-              <tr>
-                <td>Games won:</td>
-                <td>{generalInfo.win_count}</td>
-              </tr>
-              <tr>
-                <td>Games lost:</td>
-                <td>{generalInfo.loss_count}</td>
-              </tr>
-              <tr>
-                <td>Games drawn:</td>
-                <td>{generalInfo.draw_count}</td>
-              </tr>
-              <tr>
-                <td>Location:</td>
-                <td>{playerData.location}</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td>Rank #:</td>
+                  <td>{generalInfo.rank}</td>
+                </tr>
+                <tr>
+                  <td>User name:</td>
+                  <td>{playerData.username}</td>
+                </tr>
+                <tr>
+                  <td>Title:</td>
+                  <td>{playerData.title}</td>
+                </tr>
+                <tr>
+                  <td>Score:</td>
+                  <td>{generalInfo.score}</td>
+                </tr>
+                <tr>
+                  <td>Games won:</td>
+                  <td>{generalInfo.win_count}</td>
+                </tr>
+                <tr>
+                  <td>Games lost:</td>
+                  <td>{generalInfo.loss_count}</td>
+                </tr>
+                <tr>
+                  <td>Games drawn:</td>
+                  <td>{generalInfo.draw_count}</td>
+                </tr>
+                <tr>
+                  <td>Location:</td>
+                  <td>{playerData.location}</td>
+                </tr>
+              </tbody>
             </table>
           </div>
         )

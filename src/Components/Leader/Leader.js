@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { BiRightArrowCircle } from 'react-icons/bi';
 import PropTypes from 'prop-types';
+import { BiRightArrowCircle } from 'react-icons/bi';
 import './Leader.css';
 
 const Leader = ({ index, rank, username }) => (

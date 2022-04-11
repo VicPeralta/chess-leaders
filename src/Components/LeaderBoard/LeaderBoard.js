@@ -1,9 +1,9 @@
 import { useParams, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
-import SearchBar from './SearchBar';
-import Category from './CategoryCard';
-import Leader from './Leader';
+import SearchBar from '../SearchBar/SearchBar';
+import Category from '../CategoryCard/CategoryCard';
+import Leader from '../Leader/Leader';
 import './LeaderBoard.css';
 
 const LeaderBoard = () => {
