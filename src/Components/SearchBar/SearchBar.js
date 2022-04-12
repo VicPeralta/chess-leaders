@@ -14,7 +14,7 @@ const SearchBar = (
     searchHandler(event.target.value);
   };
   return (
-    <div className="search-bar">
+    <div className="search-bar" data-testid="searchBar-element">
       <div className="back-section">
         <Link to={backPath}>
           <IoIosArrowBack size={20} />
