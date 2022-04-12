@@ -68,7 +68,7 @@ describe('LeaderBoard component test', () => {
           username: 'victor',
           title: 'GM',
           location: 'Mexico',
-          rank: 1,
+          rank: 2,
           win_count: 0,
           loss_count: 0,
           draw_count: 0,

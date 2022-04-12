@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
 import SearchBar from '../SearchBar/SearchBar';
@@ -43,11 +43,14 @@ const LeaderBoard = () => {
           {
             leaders.data.filter((leader) => (leader.username.includes(filter)))
               .map((leader) => (
-                <Link key={leader.username} to={`/playercard/${leader.username}/${index}`}>
-                  <p>
-                    {leader.username}
-                  </p>
-                </Link>
+                // <Link key={leader.username} to={`/playercard/${leader.username}/${index}`}>
+                <Leader
+                  key={leader.rank}
+                  index={Number(index)}
+                  rank={leader.rank}
+                  username={leader.username}
+                />
+                // </Link>
               ))
           }
         </div>

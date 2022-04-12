@@ -26,6 +26,10 @@ body {
   color: var(--highlighted-text);
 }
 
+a {
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
   user-select: none;

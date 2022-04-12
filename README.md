@@ -30,6 +30,8 @@ To get a local copy follow these simple example steps.
 `npm run build`  
 5.- Run this command to see the page `npm start`  
 6.- To see the code open the project in the code editor of your preference.  
+7.- To run the tests associated with the application, use this command:    
+`npm test`
 
 ## Author
 

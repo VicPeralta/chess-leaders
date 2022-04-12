@@ -7,6 +7,8 @@
   border-radius: 8px;
   cursor: pointer;
   margin: 2px auto;
+  color: inherit;
+  text-decoration: none;
 }
 
 .category-title-section {
@@ -23,6 +25,7 @@
 
 .category-card a {
   text-decoration: none;
+  color: white;
 }
 
 .category-title {
