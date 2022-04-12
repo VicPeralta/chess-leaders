@@ -13,7 +13,7 @@
 [Chess leaders](https://vicperalta.github.io/chess-leaders/)   
 
 
-<img src="./chessLeadersBlack.png" width="100%" height="auto"/>
+<img src="./chessLeaders.png" width="100%" height="auto"/>
 
 ## Getting Started
 
@@ -49,6 +49,7 @@ Feel free to check the [issues page](https://github.com/VicPeralta/chess-leaders
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+- Chess data provided by [chess.com](https://www.chess.com/news/view/published-data-api)
 - Original design by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
 - All icons from flaticon(<a href="https://www.flaticon.com/free-icons/year" title="year icons">Year icons created by Freepik - Flaticon</a>)
 - A special thank for @fernandorpm for this amazing [README template](https://github.com/microverseinc/readme-template)
