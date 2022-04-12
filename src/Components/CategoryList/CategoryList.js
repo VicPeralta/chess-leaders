@@ -19,7 +19,7 @@ const CategoryList = () => {
       {!fetching && chessData && (
         <>
           <SearchBar searchHandler={handleFilter} backText="" backPath="/" searchText="Categories" />
-          <div className="category-container">
+          <div className="category-container" data-testid="categoryList-component">
             {!filter && (
               <>
                 {

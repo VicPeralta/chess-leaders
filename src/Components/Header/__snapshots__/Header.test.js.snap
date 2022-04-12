@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component test Header snapshot 1`] = `
+<div
+  className="header"
+>
+  <img
+    alt="Header"
+    src="whiteQueen.png"
+  />
+  <h1>
+    chess.com
+    <br />
+    leaders
+  </h1>
+</div>
+`;

@@ -1,7 +1,7 @@
 import './ProgressCircle.css';
 
 const ProgressCircle = () => (
-  <div className="circle-wrap">
+  <div className="circle-wrap" data-testid="circle-element">
     <div className="circle">
       <div className="mask full">
         <div className="fill" />
