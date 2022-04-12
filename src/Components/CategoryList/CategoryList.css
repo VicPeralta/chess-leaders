@@ -1,0 +1,20 @@
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+.category-container a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:nth-child(4n + 2) {
+  background-color: var(--alternate-color);
+}
+
+a:nth-child(4n + 3) {
+  background-color: var(--alternate-color);
+}

@@ -1,0 +1,13 @@
+.fetching {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+.fetching p {
+  font-size: 1.3rem;
+  margin: 10px;
+}
