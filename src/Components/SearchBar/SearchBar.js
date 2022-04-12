@@ -13,6 +13,7 @@ const SearchBar = (
   const handeChange = (event) => {
     searchHandler(event.target.value);
   };
+  const search = `${searchText}`;
   return (
     <div className="search-bar" data-testid="searchBar-element">
       <div className="back-section">
@@ -21,7 +22,12 @@ const SearchBar = (
         </Link>
         <span className="back-text">{backText}</span>
       </div>
-      <input type="text" placeholder={searchText} className="search" onChange={handeChange} />
+      <input
+        type="text"
+        placeholder={search}
+        className="search"
+        onChange={handeChange}
+      />
       <div className="icons">
         <BiMicrophone size={20} style={{ margin: '0 10px' }} />
         <AiOutlineSetting size={20} />
