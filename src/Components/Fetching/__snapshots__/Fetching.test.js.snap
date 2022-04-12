@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fetching Component testing Fetching Snapshot 1`] = `
+<div
+  className="fetching"
+>
+  <p>
+    Retrieving data 
+  </p>
+  <p>
+    from chess.com
+  </p>
+  <p>
+    Please wait...
+  </p>
+  <div
+    className="circle-wrap"
+    data-testid="circle-element"
+  >
+    <div
+      className="circle"
+    >
+      <div
+        className="mask full"
+      >
+        <div
+          className="fill"
+        />
+      </div>
+      <div
+        className="mask half"
+      >
+        <div
+          className="fill"
+        />
+      </div>
+      <div
+        className="inside-circle"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rendering CategoryList Fetching 1`] = `
+exports[`CategoryList Component Test Rendering CategoryList Fetching 1`] = `
 Array [
   <div
     className="search-bar"
@@ -209,7 +209,7 @@ Array [
 ]
 `;
 
-exports[`Rendering CategoryList Success 1`] = `
+exports[`CategoryList Component Test Rendering CategoryList Success 1`] = `
 Array [
   <div
     className="search-bar"

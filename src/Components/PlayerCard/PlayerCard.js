@@ -41,7 +41,7 @@ const PlayerCard = () => {
           <div className="player-info">
             {playerData.avatar && (<img src={playerData.avatar} alt="Player avatar" />)}
             {!playerData.avatar && (<img src={noPhoto} alt="Player avatar" />)}
-            <p className="player-name">
+            <p className="player-name" data-testid="player-name">
               {playerData.name}
             </p>
             <table>
