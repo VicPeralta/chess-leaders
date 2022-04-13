@@ -1,41 +1,47 @@
 import { Provider } from 'react-redux';
-import { HashRouter } from 'react-router-dom';
+import { Route, Routes } from 'react-router';
+import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
+import { screen, render } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import store from '../../Redux/configureStore';
 import CategoryList from './CategoryList';
-import { getChessDataSuccess } from '../../Redux/chessLeaders/chess';
+import LeaderBoard from '../LeaderBoard/LeaderBoard';
+import PlayerCard from '../PlayerCard/PlayerCard';
+
+jest.mock('../../Redux/chessLeaders/chess.js');
 
 describe('CategoryList Component Test', () => {
-  test('Rendering CategoryList Success', () => {
-    const element = (
+  const element = (
+    <MemoryRouter>
       <Provider store={store}>
-        <HashRouter>
-          <CategoryList />
-        </HashRouter>
+        <Routes>
+          <Route path="/leaderboard" element={<LeaderBoard />}>
+            <Route path=":index" element={<LeaderBoard />} />
+          </Route>
+          <Route path="/playerCard" element={<PlayerCard />}>
+            <Route path=":username/:index" element={<PlayerCard />} />
+          </Route>
+        </Routes>
+        <CategoryList />
       </Provider>
-    );
-    const chessData = [
-      {
-        id: 0, name: 'daily', data: Array(10), average: 2538.5,
-      },
-      {
-        id: 1, name: 'daily960', data: Array(10), average: 2538.5,
-      },
-    ];
-    store.dispatch(getChessDataSuccess(chessData));
+    </MemoryRouter>
+  );
+  test('Match Snapshot', () => {
     const list = renderer.create(element);
     expect(list).toMatchSnapshot();
   });
-
-  test('Rendering CategoryList Fetching', () => {
-    const element = (
-      <Provider store={store}>
-        <HashRouter>
-          <CategoryList />
-        </HashRouter>
-      </Provider>
-    );
-    const list = renderer.create(element);
-    expect(list).toMatchSnapshot();
+  test('Render correctly', () => {
+    render(element);
+    const list = screen.getByText(/Special category/);
+    expect(list).toBeInTheDocument();
+  });
+  test('User interaction', async () => {
+    render(element);
+    // The second link is the first card
+    const card = screen.getAllByRole('link')[1];
+    expect(card).toBeInTheDocument();
+    userEvent.click(card);
+    expect(screen.getByText(/VicPeralta/)).toBeInTheDocument();
   });
 });
