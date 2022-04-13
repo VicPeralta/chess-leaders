@@ -16,6 +16,7 @@ describe('CategoryList Component Test', () => {
     <MemoryRouter>
       <Provider store={store}>
         <Routes>
+          <Route path="/" element={<CategoryList />} />
           <Route path="/leaderboard" element={<LeaderBoard />}>
             <Route path=":index" element={<LeaderBoard />} />
           </Route>
@@ -23,7 +24,6 @@ describe('CategoryList Component Test', () => {
             <Route path=":username/:index" element={<PlayerCard />} />
           </Route>
         </Routes>
-        <CategoryList />
       </Provider>
     </MemoryRouter>
   );
