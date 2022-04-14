@@ -5,26 +5,20 @@ import { HashRouter } from 'react-router-dom';
 import store from '../../Redux/configureStore';
 import Leader from './Leader';
 
+jest.mock('../../Redux/chessLeaders/chess.js');
 describe('Leader component test', () => {
+  const element = (
+    <Provider store={store}>
+      <HashRouter>
+        <Leader index={1} rank={1} username="Victor" />
+      </HashRouter>
+    </Provider>
+  );
   test('Leader snapshot', () => {
-    const element = (
-      <Provider store={store}>
-        <HashRouter>
-          <Leader index={1} rank={1} username="Victor" />
-        </HashRouter>
-      </Provider>
-    );
     const leader = renderer.create(element);
     expect(leader).toMatchSnapshot();
   });
   test('Render Leader', () => {
-    const element = (
-      <Provider store={store}>
-        <HashRouter>
-          <Leader index={1} rank={1} username="Victor" />
-        </HashRouter>
-      </Provider>
-    );
     render(element);
     const leader = screen.getByText(/Victor/i);
     expect(leader).toBeInTheDocument();

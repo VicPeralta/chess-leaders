@@ -21,6 +21,7 @@ const chessData = [
         username: 'VicPeralta',
         title: 'GM',
         location: 'Mexico',
+        score: 1800,
         rank: 1,
         win_count: 0,
         loss_count: 0,
@@ -32,6 +33,7 @@ const chessData = [
         username: 'kasparov',
         title: 'GM',
         location: 'Russia',
+        score: 2800,
         rank: 2,
         win_count: 0,
         loss_count: 0,
@@ -46,10 +48,11 @@ const chessData = [
     data: [
       {
         avatar: '',
-        name: 'Perala, Victor',
+        name: 'Peralta, Victor',
         username: 'VicPeralta',
         title: 'GM',
         location: 'Mexico',
+        score: 1800,
         rank: 1,
         win_count: 0,
         loss_count: 0,
@@ -61,6 +64,7 @@ const chessData = [
         username: 'kasparov',
         title: 'GM',
         location: 'Russia',
+        score: 2800,
         rank: 2,
         win_count: 0,
         loss_count: 0,
@@ -71,7 +75,7 @@ const chessData = [
   },
 ];
 const playerData = {
-  name: 'Victor Peralta',
+  name: 'Peralta, Victor',
   username: 'VicPeralta',
   title: 'GM',
   location: 'Mexico',

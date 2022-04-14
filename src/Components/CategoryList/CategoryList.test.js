@@ -36,12 +36,15 @@ describe('CategoryList Component Test', () => {
     const list = screen.getByText(/Special category/);
     expect(list).toBeInTheDocument();
   });
-  test('User interaction', async () => {
+  test('User interaction', () => {
     render(element);
     // The second link is the first card
     const card = screen.getAllByRole('link')[1];
     expect(card).toBeInTheDocument();
+    // From the category list, navigates to leaderboard
     userEvent.click(card);
+    // The list of players includes VicPeralta & kasparov
     expect(screen.getByText(/VicPeralta/)).toBeInTheDocument();
+    expect(screen.getByText(/kasparov/)).toBeInTheDocument();
   });
 });

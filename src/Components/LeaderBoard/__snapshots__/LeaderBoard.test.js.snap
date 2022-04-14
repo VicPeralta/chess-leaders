@@ -90,12 +90,12 @@ Array [
     </div>
   </div>,
   <a
-    href="/leaderboard/1"
+    href="/leaderboard/0"
     onClick={[Function]}
   >
     <div
       className="category-card"
-      data-id={1}
+      data-id={0}
       role="presentation"
     >
       <div
@@ -103,12 +103,11 @@ Array [
       />
       <img
         alt="the category"
-        src="daily.png"
       />
       <p
         className="category-title"
       >
-        daily
+        Special category
       </p>
       <div
         className="average"
@@ -139,11 +138,11 @@ Array [
       <p
         className="user"
       >
-        victor
+        VicPeralta
       </p>
       <a
         className="more"
-        href="/playercard/victor/1"
+        href="/playercard/VicPeralta/0"
         onClick={[Function]}
       >
         <svg
@@ -181,11 +180,11 @@ Array [
       <p
         className="user"
       >
-        victor
+        kasparov
       </p>
       <a
         className="more"
-        href="/playercard/victor/1"
+        href="/playercard/kasparov/0"
         onClick={[Function]}
       >
         <svg

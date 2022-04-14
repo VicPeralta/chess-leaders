@@ -1,92 +1,31 @@
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
+import { render, screen } from '@testing-library/react';
 import store from '../../Redux/configureStore';
 import PlayerCard from './PlayerCard';
-import { getChessDataSuccess, getPlayerDataSuccess } from '../../Redux/chessLeaders/chess';
 
+jest.mock('../../Redux/chessLeaders/chess.js');
 describe('PlayerCard component test', () => {
   const element = (
-    <Provider store={store}>
-      <MemoryRouter initialEntries={['/playerCard/victor/1']}>
+    <MemoryRouter initialEntries={['/playerCard/VicPeralta/0']}>
+      <Provider store={store}>
         <Routes>
           <Route path="/playerCard" element={<PlayerCard />}>
             <Route path=":username/:index" element={<PlayerCard />} />
           </Route>
         </Routes>
-      </MemoryRouter>
-    </Provider>
+      </Provider>
+    </MemoryRouter>
   );
-  const chessData = [
-    {
-      id: 0,
-      name: 'daily',
-      data: [
-        {
-          avatar: '',
-          name: 'Victor',
-          username: 'victor',
-          title: 'GM',
-          location: 'Mexico',
-          rank: 1,
-          win_count: 0,
-          loss_count: 0,
-          draw_count: 0,
-        },
-        {
-          avatar: '',
-          name: 'Victor',
-          username: 'victor',
-          title: 'GM',
-          location: 'Mexico',
-          rank: 1,
-          win_count: 0,
-          loss_count: 0,
-          draw_count: 0,
-        },
-      ],
-      average: 2538.5,
-    },
-    {
-      id: 1,
-      name: 'daily',
-      data: [
-        {
-          avatar: '',
-          name: 'Victor',
-          username: 'victor',
-          title: 'GM',
-          location: 'Mexico',
-          rank: 1,
-          win_count: 0,
-          loss_count: 0,
-          draw_count: 0,
-        },
-        {
-          avatar: '',
-          name: 'Victor',
-          username: 'victor',
-          title: 'GM',
-          location: 'Mexico',
-          rank: 1,
-          win_count: 0,
-          loss_count: 0,
-          draw_count: 0,
-        },
-      ],
-      average: 2538.5,
-    },
-  ];
-  const playerData = {
-    name: 'Victor Peralta',
-    username: 'victor',
-    title: 'GM',
-    location: 'Mexico',
-  };
+  test('Render PlayerCard', () => {
+    render(element);
+    const playerName = screen.getByText(/Peralta, Victor/);
+    expect(playerName).toBeInTheDocument();
+  });
+
   test('PlayerCard snapshot', () => {
-    store.dispatch(getChessDataSuccess(chessData));
-    store.dispatch(getPlayerDataSuccess(playerData));
-    const leader = renderer.create(element);
-    expect(leader).toMatchSnapshot();
+    const player = renderer.create(element);
+    expect(player).toMatchSnapshot();
   });
 });

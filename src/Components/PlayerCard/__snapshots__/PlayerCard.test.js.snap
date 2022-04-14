@@ -10,7 +10,7 @@ Array [
       className="back-section"
     >
       <a
-        href="/leaderboard/1"
+        href="/leaderboard/0"
         onClick={[Function]}
       >
         <svg
@@ -100,7 +100,7 @@ Array [
       className="player-name"
       data-testid="player-name"
     >
-      Victor Peralta
+      Peralta, Victor
     </p>
     <table>
       <tbody>
@@ -117,7 +117,7 @@ Array [
             User name:
           </td>
           <td>
-            victor
+            VicPeralta
           </td>
         </tr>
         <tr>
@@ -132,7 +132,9 @@ Array [
           <td>
             Score:
           </td>
-          <td />
+          <td>
+            1800
+          </td>
         </tr>
         <tr>
           <td>
