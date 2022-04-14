@@ -16,12 +16,12 @@ describe('Chess reducer test', () => {
   const chessData = [
     {
       id: 0,
-      name: 'daily',
+      name: 'Special category',
       data: [
         {
           avatar: '',
-          name: 'Victor',
-          username: 'victor',
+          name: 'Peralta, Victor',
+          username: 'VicPeralta',
           title: 'GM',
           location: 'Mexico',
           rank: 1,
@@ -31,11 +31,11 @@ describe('Chess reducer test', () => {
         },
         {
           avatar: '',
-          name: 'Victor',
-          username: 'victor',
+          name: 'Kasparov, Gary',
+          username: 'kasparov',
           title: 'GM',
-          location: 'Mexico',
-          rank: 1,
+          location: 'Russia',
+          rank: 2,
           win_count: 0,
           loss_count: 0,
           draw_count: 0,
@@ -49,8 +49,8 @@ describe('Chess reducer test', () => {
       data: [
         {
           avatar: '',
-          name: 'Victor',
-          username: 'victor',
+          name: 'Perala, Victor',
+          username: 'VicPeralta',
           title: 'GM',
           location: 'Mexico',
           rank: 1,
@@ -60,17 +60,17 @@ describe('Chess reducer test', () => {
         },
         {
           avatar: '',
-          name: 'Victor',
-          username: 'victor',
+          name: 'Kasparov, Gary',
+          username: 'kasparov',
           title: 'GM',
-          location: 'Mexico',
-          rank: 1,
+          location: 'Russia',
+          rank: 2,
           win_count: 0,
           loss_count: 0,
           draw_count: 0,
         },
       ],
-      average: 2538.5,
+      average: 0.5,
     },
   ];
   test('getChessDataBegin', () => {
@@ -97,7 +97,7 @@ describe('Chess reducer test', () => {
   test('getPlayerDataSuccess', () => {
     const playerData = {
       name: 'Victor Peralta',
-      username: 'victor',
+      username: 'VicPeralta',
       title: 'GM',
       location: 'Mexico',
     };

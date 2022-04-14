@@ -1,14 +1,15 @@
 import renderer from 'react-test-renderer';
+import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import store from '../../Redux/configureStore';
 import LeaderBoard from './LeaderBoard';
-import { getChessDataSuccess } from '../../Redux/chessLeaders/chess';
 
+jest.mock('../../Redux/chessLeaders/chess.js');
 describe('LeaderBoard component test', () => {
   const element = (
     <Provider store={store}>
-      <MemoryRouter initialEntries={['/leaderboard/1']}>
+      <MemoryRouter initialEntries={['/leaderboard/0']}>
         <Routes>
           <Route path="/leaderboard" element={<LeaderBoard />}>
             <Route path=":index" element={<LeaderBoard />} />
@@ -17,68 +18,12 @@ describe('LeaderBoard component test', () => {
       </MemoryRouter>
     </Provider>
   );
-  const chessData = [
-    {
-      id: 0,
-      name: 'daily',
-      data: [
-        {
-          avatar: '',
-          name: 'Victor',
-          username: 'victor',
-          title: 'GM',
-          location: 'Mexico',
-          rank: 1,
-          win_count: 0,
-          loss_count: 0,
-          draw_count: 0,
-        },
-        {
-          avatar: '',
-          name: 'Victor',
-          username: 'victor',
-          title: 'GM',
-          location: 'Mexico',
-          rank: 1,
-          win_count: 0,
-          loss_count: 0,
-          draw_count: 0,
-        },
-      ],
-      average: 2538.5,
-    },
-    {
-      id: 1,
-      name: 'daily',
-      data: [
-        {
-          avatar: '',
-          name: 'Victor',
-          username: 'victor',
-          title: 'GM',
-          location: 'Mexico',
-          rank: 1,
-          win_count: 0,
-          loss_count: 0,
-          draw_count: 0,
-        },
-        {
-          avatar: '',
-          name: 'Victor',
-          username: 'victor',
-          title: 'GM',
-          location: 'Mexico',
-          rank: 2,
-          win_count: 0,
-          loss_count: 0,
-          draw_count: 0,
-        },
-      ],
-      average: 2538.5,
-    },
-  ];
+  test('Render LeaderBoard', () => {
+    render(element);
+    const card = screen.getByText(/Special category/);
+    expect(card).toBeInTheDocument();
+  });
   test('LeaderBoard snapshot', () => {
-    store.dispatch(getChessDataSuccess(chessData));
     const leader = renderer.create(element);
     expect(leader).toMatchSnapshot();
   });
