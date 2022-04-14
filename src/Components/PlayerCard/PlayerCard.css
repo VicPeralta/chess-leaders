@@ -25,6 +25,7 @@
 @media (min-height: 650px) {
   .player-info img {
     width: 40%;
+    max-width: 300px;
     height: auto;
   }
 
@@ -34,6 +35,6 @@
   }
 
   td {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
