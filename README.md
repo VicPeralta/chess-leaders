@@ -39,6 +39,7 @@ To get a local copy follow these simple example steps.
 - GitHub: [@VicPeralta](https://github.com/VicPeralta)
 - Twitter: [@VicPeralta](https://twitter.com/VicPeralta)
 - Linkedin: [@VicPeralta](https://www.linkedin.com/in/vicperalta/)
+- Chess.com: [@viktorperalta](https://www.chess.com/member/viktorperalta)
 
 ## 🤝 Contributing
 
