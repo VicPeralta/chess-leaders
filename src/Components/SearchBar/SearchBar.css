@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 26px;
+  height: 40px;
   margin: 10px auto;
   background-color: inherit;
   color: inherit;
@@ -26,19 +26,23 @@
 }
 
 .search {
-  margin-left: 3px;
   border: none;
   padding: 3px 8px;
   background-color: var(--bg-color);
   color: inherit;
   outline: none;
   font-size: 1.1rem;
-  max-width: 200px;
+  max-width: 150px;
+}
+
+.search-div {
+  display: flex;
+  align-items: center;
 }
 
 .search::placeholder {
   color: rgb(235, 232, 232);
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 .back-section {

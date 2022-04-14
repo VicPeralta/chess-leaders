@@ -6,6 +6,7 @@
   margin: 5px auto;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .header h1 {
@@ -15,4 +16,11 @@
 .header img {
   width: 80px;
   height: auto;
+}
+
+@media (min-width: 513px) {
+  .header {
+    justify-content: center;
+    gap: 50px;
+  }
 }

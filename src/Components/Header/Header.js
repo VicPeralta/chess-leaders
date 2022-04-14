@@ -1,9 +1,9 @@
-import king from '../../assets/whiteQueen.png';
+import { FaChessPawn } from 'react-icons/fa';
 import './Header.css';
 
 const Header = () => (
   <div className="header">
-    <img src={king} alt="Header" />
+    <FaChessPawn size={80} />
     <h1>
       chess.com
       <br />

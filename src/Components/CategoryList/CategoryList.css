@@ -18,3 +18,13 @@ a:nth-child(4n + 2) {
 a:nth-child(4n + 3) {
   background-color: var(--alternate-color);
 }
+
+@media (min-width: 513px) {
+  a:nth-child(even) {
+    background-color: var(--alternate-color);
+  }
+
+  a:nth-child(odd) {
+    background-color: var(--bg-color);
+  }
+}

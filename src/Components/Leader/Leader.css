@@ -4,7 +4,7 @@
   width: 100%;
   align-items: center;
   padding-inline: 10px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .leader-row a {
@@ -14,7 +14,9 @@
 
 .rank {
   text-align: left;
-  width: 20%;
+  width: 10%;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .more {
@@ -23,5 +25,14 @@
 
 .user {
   text-align: left;
+  font-size: 1.1rem;
   width: 60%;
+}
+
+@media (min-width: 513px) {
+  .user {
+    text-align: left;
+    font-size: 1.2rem;
+    width: 60%;
+  }
 }

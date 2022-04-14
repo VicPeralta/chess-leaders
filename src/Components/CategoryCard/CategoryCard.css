@@ -21,6 +21,7 @@
 .category-card > img {
   width: 100px;
   height: auto;
+  filter: invert();
 }
 
 .category-card a {

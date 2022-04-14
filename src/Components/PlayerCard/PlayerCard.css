@@ -18,6 +18,23 @@
 }
 
 .player-name {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: bold;
+}
+
+@media (min-height: 650px) {
+  .player-info img {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .player-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  td {
+    font-size: 1.2rem;
+  }
 }

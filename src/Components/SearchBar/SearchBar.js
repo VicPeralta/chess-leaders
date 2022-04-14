@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { IoIosArrowBack } from 'react-icons/io';
-import { BiMicrophone } from 'react-icons/bi';
+import { BiMicrophone, BiSearch } from 'react-icons/bi';
 import { AiOutlineSetting } from 'react-icons/ai';
 import './SearchBar.css';
 
@@ -22,12 +22,15 @@ const SearchBar = (
         </Link>
         <span className="back-text">{backText}</span>
       </div>
-      <input
-        type="text"
-        placeholder={search}
-        className="search"
-        onChange={handeChange}
-      />
+      <div className="search-div">
+        <BiSearch />
+        <input
+          type="text"
+          placeholder={search}
+          className="search"
+          onChange={handeChange}
+        />
+      </div>
       <div className="icons">
         <BiMicrophone size={20} style={{ margin: '0 10px' }} />
         <AiOutlineSetting size={20} />
