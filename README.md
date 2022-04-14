@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Chess Leaders
-> A web app that lets you check the leaders in all chess games modalities from chess.com.
+> A web app that lets you check the leaders in all chess games modalities from chess.com. And in case you're wondering, I am not in any of them.
 
 ## Built With
 
@@ -22,7 +22,7 @@ To get a local copy follow these simple example steps.
 1.- Open the terminal window and clone the repository using this command:  
 `git@github.com:VicPeralta/chess-leaders.git` 
 
-2.- Change the directory to the react-bookstore directory  
+2.- Change the directory to the chess-leaders directory  
 `cd chess-leaders`  
 3.- Install the project's dependencies by running this command:   
 `npm install`  
