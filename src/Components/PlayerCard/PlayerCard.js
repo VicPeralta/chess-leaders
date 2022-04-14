@@ -41,41 +41,41 @@ const PlayerCard = () => {
           <div className="player-info">
             {playerData.avatar && (<img src={playerData.avatar} alt="Player avatar" />)}
             {!playerData.avatar && (<img src={noPhoto} alt="Player avatar" />)}
-            <p className="player-name" data-testid="player-name">
+            <p className="player-name highlighted" data-testid="player-name">
               {playerData.name}
             </p>
             <table>
               <tbody>
                 <tr>
-                  <td>Rank #:</td>
+                  <td className="highlighted">Rank #:</td>
                   <td>{generalInfo.rank}</td>
                 </tr>
                 <tr>
-                  <td>User name:</td>
+                  <td className="highlighted">User name:</td>
                   <td>{playerData.username}</td>
                 </tr>
                 <tr>
-                  <td>Title:</td>
+                  <td className="highlighted">Title:</td>
                   <td>{playerData.title}</td>
                 </tr>
                 <tr>
-                  <td>Score:</td>
+                  <td className="highlighted">Score:</td>
                   <td>{generalInfo.score}</td>
                 </tr>
                 <tr>
-                  <td>Games won:</td>
+                  <td className="highlighted">Games won:</td>
                   <td>{generalInfo.win_count}</td>
                 </tr>
                 <tr>
-                  <td>Games lost:</td>
+                  <td className="highlighted">Games lost:</td>
                   <td>{generalInfo.loss_count}</td>
                 </tr>
                 <tr>
-                  <td>Games drawn:</td>
+                  <td className="highlighted">Games drawn:</td>
                   <td>{generalInfo.draw_count}</td>
                 </tr>
                 <tr>
-                  <td>Location:</td>
+                  <td className="highlighted">Location:</td>
                   <td>{playerData.location}</td>
                 </tr>
               </tbody>

@@ -5,7 +5,7 @@ import './Leader.css';
 
 const Leader = ({ index, rank, username }) => (
   <div className="leader-row">
-    <p className="rank">
+    <p className="rank highlighted">
       #
       {rank}
     </p>
