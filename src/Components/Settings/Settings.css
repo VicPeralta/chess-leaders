@@ -1,33 +1,43 @@
-.sideBar {
-  width: 50%;
-  height: 100%;
+.setting-container {
   position: absolute;
-  right: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
   top: 0;
-  z-index: 10;
-  background-color: var(--alternate-color);
+  background-color: transparent;
+  backdrop-filter: invert(30%);
 }
 
-.sideBar button {
+#sideBar {
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+  padding: 10px;
+  width: 50%;
+  height: 100%;
+  background-color: var(--alternate-color);
+  font-size: 1.5rem;
+}
+
+#sideBar button {
   background-color: inherit;
   border-radius: 50%;
   padding: 2px 6px;
   color: inherit;
   border: 2px solid white;
   font-size: x-large;
-  margin-top: 5px;
   margin-right: 10px;
-  margin-left:auto;
+  margin-left: auto;
   display: block;
 }
 
 .color-options {
   display: flex;
-  margin-top:20px;
-  margin-left:20px;
+  margin-top: 20px;
+  margin-left: 20px;
   flex-direction: column;
   align-items: flex-start;
-  gap:10px;
+  gap: 10px;
 }
 
 .hide {

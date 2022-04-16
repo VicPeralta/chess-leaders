@@ -2,9 +2,11 @@ import { Route, Routes } from 'react-router';
 import LeaderBoard from './Components/LeaderBoard/LeaderBoard';
 import HomePage from './Pages/HomePage';
 import PlayerCard from './Components/PlayerCard/PlayerCard';
+import changeThemeColor, { getThemeFromLocalStorage } from './utils';
 import './App.css';
 
 function App() {
+  changeThemeColor(getThemeFromLocalStorage());
   return (
     <div className="App" data-testid="app-element">
       <Routes>

@@ -5,6 +5,7 @@ import { IoIosArrowBack } from 'react-icons/io';
 import { BiMicrophone, BiSearch } from 'react-icons/bi';
 import { AiOutlineSetting } from 'react-icons/ai';
 import Settings from '../Settings/Setting';
+import { getThemeFromLocalStorage, makeBodyScrollable } from '../../utils';
 import './SearchBar.css';
 
 const SearchBar = (
@@ -18,9 +19,11 @@ const SearchBar = (
   const [showSettings, setShowSettings] = useState(false);
   const search = `${searchText}`;
   const settingsClick = () => {
+    makeBodyScrollable(false);
     setShowSettings(true);
   };
   const onClose = () => {
+    makeBodyScrollable(true);
     setShowSettings(false);
   };
   return (
@@ -45,7 +48,11 @@ const SearchBar = (
         <button type="button" id="settings-btn" onClick={settingsClick}>
           <AiOutlineSetting size={20} />
         </button>
-        <Settings show={showSettings} onClose={onClose} />
+        <Settings
+          show={showSettings}
+          onClose={onClose}
+          color={getThemeFromLocalStorage()}
+        />
       </div>
     </div>
   );
