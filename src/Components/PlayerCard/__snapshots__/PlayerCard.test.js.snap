@@ -38,12 +38,34 @@ Array [
         BACK
       </span>
     </div>
-    <input
-      className="search"
-      onChange={[Function]}
-      placeholder=" "
-      type="text"
-    />
+    <div
+      className="search-div"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"
+        />
+      </svg>
+      <input
+        className="search"
+        onChange={[Function]}
+        placeholder=" "
+        type="text"
+      />
+    </div>
     <div
       className="icons"
     >
@@ -97,7 +119,7 @@ Array [
       src="noPhoto.svg"
     />
     <p
-      className="player-name"
+      className="player-name highlighted"
       data-testid="player-name"
     >
       Peralta, Victor
@@ -105,7 +127,9 @@ Array [
     <table>
       <tbody>
         <tr>
-          <td>
+          <td
+            className="highlighted"
+          >
             Rank #:
           </td>
           <td>
@@ -113,7 +137,9 @@ Array [
           </td>
         </tr>
         <tr>
-          <td>
+          <td
+            className="highlighted"
+          >
             User name:
           </td>
           <td>
@@ -121,7 +147,9 @@ Array [
           </td>
         </tr>
         <tr>
-          <td>
+          <td
+            className="highlighted"
+          >
             Title:
           </td>
           <td>
@@ -129,7 +157,9 @@ Array [
           </td>
         </tr>
         <tr>
-          <td>
+          <td
+            className="highlighted"
+          >
             Score:
           </td>
           <td>
@@ -137,7 +167,9 @@ Array [
           </td>
         </tr>
         <tr>
-          <td>
+          <td
+            className="highlighted"
+          >
             Games won:
           </td>
           <td>
@@ -145,7 +177,9 @@ Array [
           </td>
         </tr>
         <tr>
-          <td>
+          <td
+            className="highlighted"
+          >
             Games lost:
           </td>
           <td>
@@ -153,7 +187,9 @@ Array [
           </td>
         </tr>
         <tr>
-          <td>
+          <td
+            className="highlighted"
+          >
             Games drawn:
           </td>
           <td>
@@ -161,7 +197,9 @@ Array [
           </td>
         </tr>
         <tr>
-          <td>
+          <td
+            className="highlighted"
+          >
             Location:
           </td>
           <td>

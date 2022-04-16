@@ -5,7 +5,7 @@ exports[`Leader component test Leader snapshot 1`] = `
   className="leader-row"
 >
   <p
-    className="rank"
+    className="rank highlighted"
   >
     #
     1

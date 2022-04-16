@@ -1,4 +1,3 @@
-
 .search-bar {
   display: flex;
   align-items: center;
@@ -48,4 +47,10 @@
 .back-section {
   display: flex;
   align-items: center;
+}
+
+#settings-btn {
+  border: none;
+  background-color: inherit;
+  color: inherit;
 }

@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import { IoIosArrowBack } from 'react-icons/io';
 import { BiMicrophone, BiSearch } from 'react-icons/bi';
 import { AiOutlineSetting } from 'react-icons/ai';
+import Settings from '../Settings/Setting';
+import { getThemeFromLocalStorage, makeBodyScrollable } from '../../utils';
 import './SearchBar.css';
 
 const SearchBar = (
@@ -13,7 +16,16 @@ const SearchBar = (
   const handeChange = (event) => {
     searchHandler(event.target.value);
   };
+  const [showSettings, setShowSettings] = useState(false);
   const search = `${searchText}`;
+  const settingsClick = () => {
+    makeBodyScrollable(false);
+    setShowSettings(true);
+  };
+  const onClose = () => {
+    makeBodyScrollable(true);
+    setShowSettings(false);
+  };
   return (
     <div className="search-bar" data-testid="searchBar-element">
       <div className="back-section">
@@ -33,7 +45,14 @@ const SearchBar = (
       </div>
       <div className="icons">
         <BiMicrophone size={20} style={{ margin: '0 10px' }} />
-        <AiOutlineSetting size={20} />
+        <button type="button" id="settings-btn" onClick={settingsClick}>
+          <AiOutlineSetting size={20} />
+        </button>
+        <Settings
+          show={showSettings}
+          onClose={onClose}
+          color={getThemeFromLocalStorage()}
+        />
       </div>
     </div>
   );
