@@ -13,8 +13,9 @@
 [Chess leaders](https://vicperalta.github.io/chess-leaders/)   
 
 
-<img src="./chessLeaders.png" width="100%" height="auto"/>
+<img src="./chessLeadersBiColor.png" width="100%" height="auto"/>
 
+<img src="./chessLeaders.gif" width="50%" height="auto">
 ## Getting Started
 
 To get a local copy follow these simple example steps.  
